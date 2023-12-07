@@ -10,4 +10,12 @@ Rails.application.config.assets.paths << Rails.root.join("node_modules/bootstrap
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w( admin.js admin.css application.tailwind.css)
+Rails.application.config.assets.precompile += %w[
+  break_string.js
+  service-worker.js
+  locales/i18n.js
+  discourse/app/lib/webauthn.js
+  confirm-new-email/confirm-new-email.js
+  confirm-new-email/bootstrap.js
+  scripts/discourse-test-listen-boot
+]
